@@ -9,7 +9,8 @@
         "rating": {
         "rate": 3.9,
         "count": 120
-        }
+        },
+        "stripe_id": "prod_TE4RD6NW9sJtaW"
     },
     {
         "id": 2,
@@ -21,7 +22,8 @@
         "rating": {
         "rate": 4.1,
         "count": 259
-        }
+        },
+        "stripe_id": "prod_TE4SpGhkpZF2E5"
     },
     {
         "id": 3,
@@ -33,7 +35,8 @@
         "rating": {
         "rate": 4.7,
         "count": 500
-        }
+        },
+        "stripe_id": "prod_TE4TBeVD7CxXFm"
     },
     {
         "id": 4,
@@ -176,7 +179,8 @@
         "rating": {
         "rate": 2.6,
         "count": 235
-        }
+        },
+        "stripe_id": "prod_TE4TYXljFH1pwR"
     },
     {
         "id": 16,
@@ -188,7 +192,8 @@
         "rating": {
         "rate": 2.9,
         "count": 340
-        }
+        },
+        "stripe_id": "prod_TE4Uc1tjnUcs2V"
     },
     {
         "id": 17,
@@ -200,7 +205,8 @@
         "rating": {
         "rate": 3.8,
         "count": 679
-        }
+        },
+        "stripe_id": "prod_TE4UWdAD9IpSUM"
     },
     {
         "id": 18,
@@ -212,7 +218,8 @@
         "rating": {
         "rate": 4.7,
         "count": 130
-        }
+        },
+        "stripe_id": "prod_TE4VfoSauC4JXE"
     },
     {
         "id": 19,
@@ -224,7 +231,8 @@
         "rating": {
         "rate": 4.5,
         "count": 146
-        }
+        },
+        "stripe_id": "prod_TE4WNOcfd2k6aE"
     },
     {
         "id": 20,
@@ -236,6 +244,7 @@
         "rating": {
         "rate": 3.6,
         "count": 145
-        }
+        },
+        "stripe_id": "prod_TE4WZEDQ64Awt4"
     }
     ]
