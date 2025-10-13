@@ -5,9 +5,13 @@ export const ProductContext = createContext();
 const ProductProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
 
+  const domain = process.env.NODE_ENV === 'production' 
+    ? 'https://school-ec-shop.vercel.app' 
+    : 'http://localhost:3000';
+
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await fetch("http://localhost:3001/api/products");
+      const response = await fetch(`${domain}/api/products`);
       const data = await response.json();
       // console.log(data);
       setProducts(data);
