@@ -1,4 +1,6 @@
-import React, { createContext, useEffect, useState } from 'react';
+import React, { createContext, useEffect, useState, useContext } from 'react';
+
+import { SidebarContext } from './SidebarContext';
 
 export const CartContext = createContext();
 
@@ -6,6 +8,7 @@ const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const [itemAmount, setItemAmount] = useState(0);
   const [total, setTotal] = useState(0);
+  const { isOpen, setIsOpen } = useContext(SidebarContext);
 
   useEffect(() => {
     const total = cart.reduce((accumulator, currentItem) => {
@@ -24,7 +27,13 @@ const CartProvider = ({ children }) => {
   }, [cart]);
 
   const addToCart = (product, id) => {
-    const newItem = { ...product, amount: 1 }
+    if (!isOpen) setIsOpen(true);
+
+    const newItem = {
+      ...product,
+      amount: 1,
+      stripe_id: product.stripe_id
+    }
     // console.log(newItem);
     // console.log(`item ${product.title} added to the cart`);
 
